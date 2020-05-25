@@ -1,10 +1,10 @@
 {
-  "name": "blog.phvv.me",
+  "name": "@pedrexus/blog.phvv.me",
   "version": "1.0.0",
   "description": "all (or most) of the blog posts you can find at https://phvv.me",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Pedrexus/blog.phvv.me.git"
+    "url": "git://github.com/Pedrexus/blog.phvv.me.git"
   },
   "keywords": [
     "blog",

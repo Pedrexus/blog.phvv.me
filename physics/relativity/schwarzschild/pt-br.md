@@ -12,7 +12,7 @@ $$
   G_{\mu\nu} = 8 \pi \, G \, T_{\mu\nu}
 $$
 
-Entretanto, a verdade é que essa expressão trata de equações diferenciais de segunda ordem não-lineares e, portanto, é muito difícil de resolver mesmo para sistemas bem simples. O próprio Einstein, após propô-las, disse acreditar que tomaria ainda muito tempo para que alguém conseguisse uma solução para ela. Mas ele estava errado: no ano seguinte à sua exibição pública, <cite>Karl Schwarzschild</cite> publicou a primeira solução das equações de campo enquanto lutava na Primeira Guerra Mundial.
+Entretanto, essa expressão trata na verdade de equações diferenciais de segunda ordem não-lineares e, portanto, resolvê-la é difícil mesmo em sistemas bem simples. O próprio Einstein, após propô-las, disse acreditar que tomaria ainda muito tempo para que alguém conseguisse achar uma solução. Felizmente, ele estava errado: no ano seguinte à sua exibição pública, <cite>Karl Schwarzschild</cite> publicou a primeira solução das equações de campo enquanto lutava na Primeira Guerra Mundial.
 
 ## Modelagem
 
@@ -33,7 +33,7 @@ $$
 p^\mu = m u^\mu = m (1, \vec{v}) = (m, 0) \Rightarrow p^a = 0 \\
 \text{e} \ p^0 = \begin{cases} 
     m, & r \leq R \\
-    \hskip1em 0, & r > R \\ 
+    \hskip0.8em 0, & r > R \\ 
 \end{cases}
 $$
 
@@ -72,8 +72,6 @@ $$
 
 Assim, chegamos à forma mais simples para a expressão das equações de campo no vácuo $R_{\mu\nu} = 0$
 
-***
-
 ## Métrica
 
 A premissa de campo estático no sistema de Schwarzschild leva a uma métrica independente do tempo e a um elemento de linha invariante frente inversões temporais. Essa segunda condição leva a vínculos na métrica, que podem ser obtidos por meio de
@@ -81,8 +79,8 @@ A premissa de campo estático no sistema de Schwarzschild leva a uma métrica in
 $$
 \begin{aligned}
 	ds^2(x^0) = ds^2(x'^0 = -x^0) & \Rightarrow g_{\mu\nu}dx^\mu dx^\nu = g_{\mu\nu}dx'^\mu dx'^\nu \\
-                                & \Rightarrow g_{00}dx^0dx^0 + g_{01}dx^0dx^1 + \dots = g_{00}dx^0dx^0 - g_{01}dx^0dx^1 + \dotsm  \\
-                                & \Rightarrow g_{a0} = g_{0a} = 0 \\
+                                  & \Rightarrow g_{00}dx^0dx^0 + g_{01}dx^0dx^1 + \dots = g_{00}dx^0dx^0 - g_{01}dx^0dx^1 + \dotsm  \\
+                                  & \Rightarrow g_{a0} = g_{0a} = 0 \\
 \end{aligned}
 $$
 
@@ -110,8 +108,6 @@ $$
 $$
 
 onde $\tau = \tau(r) \text{ e } \lambda = \lambda(r)$
-
-***
 
 ## Conexões
 
@@ -172,8 +168,6 @@ $$
 \end{aligned}
 
 $$
-
-***
 
 ## Ricci
 
@@ -259,3 +253,75 @@ $$
       1 - [1 + r(\tau' - \lambda')]e^{-2\lambda} = 0 \\
 \end{cases}
 $$
+
+## Resolvendo o sistema
+
+A segunda equação do sistema, $\lambda'\tau' -\tau'' -\tau'^2 + 2 \tfrac{\lambda'}{r} = 0$ pode ser reescrita na forma $-\lambda'\tau' +\tau'' +\tau'^2 = 2 \tfrac{\lambda'}{r} \Rightarrow \tau'' - \lambda' \tau' + \tau'^2 = 2 \tfrac{\lambda'}{r}$. Assim, a primeira equação se torna
+
+$$
+\begin{aligned}
+(2 \tfrac{\lambda' + \tau'}{r}) e^{(2\tau - 2\lambda)} = 0 & \Rightarrow \tfrac{\lambda' + \tau'}{r} = 0 \\
+                                                           & \Rightarrow \lambda' + \tau' = 0 \\
+                                                           & \Rightarrow \lambda + \tau = cte \\
+\end{aligned}
+$$
+
+Agora, é razoável assumir que, para $r >> R$, a métrica se torne plana, i.e., 
+
+$$
+\begin{aligned}
+e^{2\tau} \approxeq e^{2\lambda} \approxeq 1 & \Rightarrow e^{2\tau + 2\lambda} = 1 \\
+                                             & \Rightarrow e^{\tau + \lambda} = 1 \\
+                                             & \Rightarrow \tau + \lambda = 0 \\
+\end{aligned}
+$$
+
+Então, como $\lambda + \tau = cte, \forall r > R$ e $\lambda + \tau = 0, \forall r >> R$, temos que
+
+$$
+\tau + \lambda = 0, \forall r > R
+$$
+
+Desse modo, a terceira equação do sistema se torna 
+
+$$
+\begin{aligned}
+1 - (1 + 2r\tau')e^{2\tau} = 0 & \Rightarrow (1 + 2r\tau')e^{2\tau} = 1 \\
+                               & \Rightarrow (re^{2\tau})' = 1 \\
+                               & \Rightarrow re^{2\tau} = r + C, \, C \in \mathbb{R}
+\end{aligned}
+$$
+
+## Calculando as componentes da métrica
+
+De posse do resultado anterior, já é possível calcular cada componente da métrica, 
+
+$$
+\begin{aligned}
+g_{00} = -e^{2\tau} & = - (1 + \tfrac{C}{r}) \\
+g_{11} = e^{2\lambda} & = (1 + \tfrac{C}{r})^{-1}
+\end{aligned}
+$$
+
+Contudo, sabemos que, no limite Newtoniano, $g_{00} = -(1 + 2\Phi)$, onde $\Phi$ é o potencial gravitacional $\Phi = - \tfrac{M}{r}$. Logo, é simples perceber que $C = - 2M$.
+
+## Forma final da métrica de Schwarzschild e do elemento de linha
+
+Finalmente, a partir das componentes calculadas, podemos escrever a **métrica de Schwarzschild** como
+
+$$
+(g_{\mu\nu}) = \left(\begin{matrix}
+	- (1 + \tfrac{2M}{r}) & 0 & 0 & 0 \\
+	0 & (1 - \tfrac{2M}{r})^{-1} & 0 & 0 \\
+	0 & 0 & r^2 & 0 \\
+	0 & 0 & 0 & r^2 sen^2 \theta
+\end{matrix}\right)
+$$
+
+e o respectivo elemento de linha  
+
+$$
+ds^2 = - (1 + \tfrac{2M}{r}) dt^2 + (1 + \tfrac{2M}{r})^{-1} dr^2 + r^2 (d\theta^2 + sin^2\theta d\varphi^2)
+$$
+
+$\qed$
