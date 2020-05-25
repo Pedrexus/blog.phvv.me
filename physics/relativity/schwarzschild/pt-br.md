@@ -270,9 +270,9 @@ Agora, é razoável assumir que, para $r >> R$, a métrica se torne plana, i.e.,
 
 $$
 \begin{aligned}
-e^{2\tau} \approxeq e^{2\lambda} \approxeq 1 & \Rightarrow e^{2\tau + 2\lambda} = 1 \\
-                                             & \Rightarrow e^{\tau + \lambda} = 1 \\
-                                             & \Rightarrow \tau + \lambda = 0 \\
+e^{2\tau} \approx e^{2\lambda} \approx 1 & \Rightarrow e^{2\tau + 2\lambda} = 1 \\
+                                         & \Rightarrow e^{\tau + \lambda} = 1 \\
+                                         & \Rightarrow \tau + \lambda = 0 \\
 \end{aligned}
 $$
 
