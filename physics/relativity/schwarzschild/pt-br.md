@@ -256,7 +256,13 @@ $$
 
 ## Resolvendo o sistema
 
-A segunda equação do sistema, $\lambda'\tau' -\tau'' -\tau'^2 + 2 \tfrac{\lambda'}{r} = 0$ pode ser reescrita na forma $-\lambda'\tau' +\tau'' +\tau'^2 = 2 \tfrac{\lambda'}{r} \Rightarrow \tau'' - \lambda' \tau' + \tau'^2 = 2 \tfrac{\lambda'}{r}$. Assim, a primeira equação se torna
+A segunda equação do sistema, $\lambda'\tau' -\tau'' -\tau'^2 + 2 \tfrac{\lambda'}{r} = 0$ pode ser reescrita na forma 
+
+$$
+-\lambda'\tau' +\tau'' +\tau'^2 = 2 \tfrac{\lambda'}{r} \Rightarrow \tau'' - \lambda' \tau' + \tau'^2 = 2 \tfrac{\lambda'}{r}
+$$ 
+
+Assim, a primeira equação se torna
 
 $$
 \begin{aligned}
@@ -303,7 +309,13 @@ g_{11} = e^{2\lambda} & = (1 + \tfrac{C}{r})^{-1}
 \end{aligned}
 $$
 
-Contudo, sabemos que, no limite Newtoniano, $g_{00} = -(1 + 2\Phi)$, onde $\Phi$ é o potencial gravitacional $\Phi = - \tfrac{M}{r}$. Logo, é simples perceber que $C = - 2M$.
+Contudo, sabemos que, no limite Newtoniano, $g_{00} = -(1 + 2\Phi)$, onde $\Phi$ é o potencial gravitacional 
+
+$$
+\Phi = - \tfrac{M}{r}
+$$ 
+
+Logo, tiramos que $C = - 2M$.
 
 ## Forma final da métrica de Schwarzschild e do elemento de linha
 
@@ -323,5 +335,3 @@ e o respectivo elemento de linha
 $$
 ds^2 = - (1 + \tfrac{2M}{r}) dt^2 + (1 + \tfrac{2M}{r})^{-1} dr^2 + r^2 (d\theta^2 + sin^2\theta d\varphi^2)
 $$
-
-$\qed$
