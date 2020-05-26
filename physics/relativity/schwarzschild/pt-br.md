@@ -14,7 +14,7 @@ $$
 
 Entretanto, essa expressão trata na verdade de equações diferenciais de segunda ordem não-lineares e, portanto, resolvê-la é difícil mesmo em sistemas bem simples. O próprio Einstein, após propô-las, disse acreditar que tomaria ainda muito tempo para que alguém conseguisse achar uma solução. Felizmente, ele estava errado: no ano seguinte à sua exibição pública, <cite>Karl Schwarzschild</cite> publicou a primeira solução das equações de campo enquanto lutava na Primeira Guerra Mundial.
 
-## Modelagem
+## Modelando o problema
 
 Para alcançar esse feito, Schwarzschild assumiu um campo estático e esfericamente simétrico gerado por uma distribuição de massa esfericamente simétrica em repouso. Em outras palavras, imaginou um sistema como um planeta, uma estrela, o Sol na forma de uma esfera perfeita de raio $R$ em que toda a sua massa $m$ se encontra igualmente distribuída em um volume $V$ e parada (sem vibrações nem rotação). Matematicamente, isso se traduz num modelo para a densidade de massa do sistema como uma função $\rho$ expressa através de
 
@@ -25,7 +25,11 @@ $$
 \end{cases} 
 $$
 
-Agora, para que vejamos como isso simplifica as equações de campo, é necessário olhar a definição do tensor de energia-momentum $T^{\mu\nu} = \dfrac{\partial p^\mu}{\partial S_\nu}$ onde $p^\mu$ é o quadrimomentum e $S_\nu$ se trata da hipersuperfície espaço-temporal, i. e., $dS_\nu = \displaystyle \prod_{\alpha \neq \nu} dx_\alpha = \dfrac{dx_0 dx_1 dx_2 dx_3}{ |dx^\nu| }$.
+Agora, para que vejamos como isso simplifica as equações de campo, é necessário olhar a definição do tensor de energia-momentum $T^{\mu\nu} = \dfrac{\partial p^\mu}{\partial S_\nu}$ onde $p^\mu$ é o quadrimomentum e $S_\nu$ se trata da hipersuperfície espaço-temporal, i.e., 
+
+$$
+dS_\nu = \displaystyle \prod_{\alpha \neq \nu} dx_\alpha = \dfrac{dx_0 dx_1 dx_2 dx_3}{ |dx^\nu| }
+$$
 
 Primeiramente, da imposição que a distribuição $\rho$ está em repouso, o quadrimomentum assume a forma 
 
@@ -37,14 +41,19 @@ p^\mu = m u^\mu = m (1, \vec{v}) = (m, 0) \Rightarrow p^a = 0 \\
 \end{cases}
 $$
 
-e, portanto, $T^{a\nu} = \dfrac{\partial p^a}{\partial S_\nu} = 0$. Por outro lado, $T^{0b} = \dfrac{\partial p^0}{\partial S_b} = \dfrac{\partial m}{\partial x_0 \partial x_a \partial x_c} = \dfrac{\partial}{\partial x_a \partial x_c}\dfrac{\partial m}{\partial t}  = 0$
+e, portanto, $T^{a\nu} = \dfrac{\partial p^a}{\partial S_\nu} = 0$. Por outro lado, 
+
+$$
+T^{0b} = 
+        \dfrac{\partial p^0}{\partial S_b} = 
+        \dfrac{\partial m}{\partial x_0 \partial x_a \partial x_c} = 
+        \dfrac{\partial}{\partial x_a \partial x_c}\dfrac{\partial m}{\partial t} = 0
+$$
 
 Assim, o que se chega é que o único valor não nulo do tensor de energia-momentum é
 
 $$
-  T^{00} = 
-  \dfrac{\partial p^0}{\partial x_1 \partial x_2 \partial x_3} = 
-  \dfrac{\partial p^0}{\partial V} = \dfrac{p^0}{V} = \rho(r)
+  T^{00} = \dfrac{\partial p^0}{\partial x_1 \partial x_2 \partial x_3} = \dfrac{\partial p^0}{\partial V} = \dfrac{p^0}{V} = \rho(r)
 $$
 
 Essa expressão nos leva a dois campos distintos: um na região interna do sistema $T^{00} = \tfrac{m}{V}$ e outro na região externa $T^{00} = 0$. Em sua análise, Schwarzschild considerou apenas a segunda região e é isso o que iremos replicar aqui.
@@ -59,7 +68,7 @@ $$
 É possível, ainda, simplificar mais a equação se calcularmos a contração do tensor de Einstein
 
 $$
-\begin{aligned}{}
+\begin{aligned}
                   G & = {G^\mu}_\mu \\
                     & = {R^\mu}_\mu - \tfrac{1}{2} R {g^\mu}_\mu \\
                     & = R - \tfrac{1}{2} R {\delta^\mu}_\mu \\
@@ -72,7 +81,7 @@ $$
 
 Assim, chegamos à forma mais simples para a expressão das equações de campo no vácuo $R_{\mu\nu} = 0$
 
-## Métrica
+## Métrica nas Coordenadas de Schwarzschild
 
 A premissa de campo estático no sistema de Schwarzschild leva a uma métrica independente do tempo e a um elemento de linha invariante frente inversões temporais. Essa segunda condição leva a vínculos na métrica, que podem ser obtidos por meio de
 
@@ -109,9 +118,15 @@ $$
 
 onde $\tau = \tau(r) \text{ e } \lambda = \lambda(r)$
 
-## Conexões
+## Obtendo as conexões da métrica
 
-Então, o que resta agora é descobrir como são as funções $\tau \text{ e } \lambda$. Para tal, utilizaremos a equação das geodésicas $\ddot{x}^\alpha + \Gamma^\alpha_{\mu\nu}\dot{x}^\mu\dot{x}^\nu = 0$ para calcular as conexões $\Gamma^\alpha_{\mu\nu}$ da variedade geométrica do espaço-tempo, pois devemos utilizar as equações de campo de vácuo para determinar a métrica.
+Então, o que resta agora é descobrir como são as funções $\tau \text{ e } \lambda$. Para tal, utilizaremos a equação das geodésicas 
+
+$$
+\ddot{x}^\alpha + \Gamma^\alpha_{\mu\nu}\dot{x}^\mu\dot{x}^\nu = 0
+$$ 
+
+para calcular as conexões $\Gamma^\alpha_{\mu\nu}$ da variedade geométrica do espaço-tempo, pois devemos utilizar as equações de campo de vácuo para determinar a métrica.
 
 Pelo método das geodésicas, começamos computando o quadrado da lagrangiana $\mathcal{L}$, dado por
 
@@ -122,7 +137,12 @@ $$
 
 onde $\dot{x}^\alpha = \dfrac{dx^\alpha}{d\lambda}$, em que $\lambda$ é um parâmetro qualquer.
         
-Em seguida, por meio da equação de Euler-Lagrange $\dfrac{d}{d\lambda}\dfrac{\partial\mathcal{L}^2}{\partial \dot{x}^\alpha} - \dfrac{\partial\mathcal{L}^2}{\partial x^\alpha} = 0$, obtêm-se o valor das conexões
+Em seguida, por meio da equação de Euler-Lagrange 
+
+$$
+\dfrac{d}{d\lambda}\dfrac{\partial\mathcal{L}^2}{\partial \dot{x}^\alpha} - \dfrac{\partial\mathcal{L}^2}{\partial x^\alpha} = 0,
+$$ 
+obtêm-se o valor das conexões
 
 $$
 \begin{aligned}
@@ -169,7 +189,7 @@ $$
 
 $$
 
-## Ricci
+## Calculando o tensor de Ricci
 
 De posse das conexões e da equação de campo no vácuo $R_{\mu\nu} = 0$, devemos apenas calcular o tensor de Ricci, que se expressa como
 
@@ -298,7 +318,7 @@ $$
 \end{aligned}
 $$
 
-## Calculando as componentes da métrica
+## Componentes da métrica e aproximação de campo fraco
 
 De posse do resultado anterior, já é possível calcular cada componente da métrica, 
 
@@ -335,3 +355,5 @@ e o respectivo elemento de linha
 $$
 ds^2 = - (1 - \tfrac{2M}{r}) dt^2 + (1 - \tfrac{2M}{r})^{-1} dr^2 + r^2 (d\theta^2 + sin^2\theta d\varphi^2)
 $$
+
+Desse modo, está demonstrada a métrica de Schwarzschild para a região externa de um corpo massivo, estático e esfericamente simétrico.
