@@ -323,7 +323,7 @@ Finalmente, a partir das componentes calculadas, podemos escrever a **métrica d
 
 $$
 (g_{\mu\nu}) = \left(\begin{matrix}
-	- (1 + \tfrac{2M}{r}) & 0 & 0 & 0 \\
+	- (1 - \tfrac{2M}{r}) & 0 & 0 & 0 \\
 	0 & (1 - \tfrac{2M}{r})^{-1} & 0 & 0 \\
 	0 & 0 & r^2 & 0 \\
 	0 & 0 & 0 & r^2 sen^2 \theta
@@ -333,5 +333,5 @@ $$
 e o respectivo elemento de linha  
 
 $$
-ds^2 = - (1 + \tfrac{2M}{r}) dt^2 + (1 + \tfrac{2M}{r})^{-1} dr^2 + r^2 (d\theta^2 + sin^2\theta d\varphi^2)
+ds^2 = - (1 - \tfrac{2M}{r}) dt^2 + (1 - \tfrac{2M}{r})^{-1} dr^2 + r^2 (d\theta^2 + sin^2\theta d\varphi^2)
 $$
