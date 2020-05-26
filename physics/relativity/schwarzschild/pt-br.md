@@ -1,12 +1,12 @@
 ---
 title: Demonstração da Métrica de Schwarzschild
-date: '2020-05-12'
-description: Demonstração da Métrica de Schwarzschild da Relatividade Geral a partir das equações de campo de Einstein
+date: '2020-05-25'
+description: Demonstração da Métrica de Schwarzschild da Relatividade Geral a partir das equações de campo de Einstein com as coordenadas de Schwarzshild
 language: português
 category: blog
 ---
 
-As equações de campo de Einstein carregam toda a essência e todos os princípios por detrás da Relatividade Geral. O curioso é que, em notação tensorial, elas se reduzem a uma única expressão aparentemente muito simplória.
+As equações de campo de Einstein carregam toda a essência e todos os princípios por detrás da Relatividade Geral. Curiosamente, em notação tensorial, elas se reduzem a uma única expressão aparentemente muito simplória.
 
 $$
   G_{\mu\nu} = 8 \pi \, G \, T_{\mu\nu}
@@ -84,7 +84,7 @@ $$
 \end{aligned}
 $$
 
-Além disso, Schwarzschild assumiu um campo esfericamente simétrico, o que significa que, em coordenadas esféricas $(x^\mu) = (t, r, \theta \varphi)$, a métrica precisa ser diagonal $g_{ij} = 0 \Leftrightarrow i \neq j$.
+Além disso, Schwarzschild assumiu um campo esfericamente simétrico, o que significa que, em coordenadas esféricas $(x^\mu) = (t, r, \theta, \varphi)$, a métrica precisa ser diagonal $g_{ij} = 0 \Leftrightarrow i \neq j$.
 
 Logo, temos que
 
@@ -272,7 +272,7 @@ $$
 \end{aligned}
 $$
 
-Agora, é razoável assumir que, para $r >> R$, a métrica se torne plana, i.e., 
+Agora, é razoável assumir que, para $r \gg R$, a métrica se torne plana, i.e., 
 
 $$
 \begin{aligned}
@@ -282,7 +282,7 @@ e^{2\tau} \approx e^{2\lambda} \approx 1 & \Rightarrow e^{2\tau + 2\lambda} = 1 
 \end{aligned}
 $$
 
-Então, como $\lambda + \tau = cte, \forall r > R$ e $\lambda + \tau = 0, \forall r >> R$, temos que
+Então, como $\lambda + \tau = cte, \forall r > R$ e $\lambda + \tau = 0, \forall r \gg R$, temos que
 
 $$
 \tau + \lambda = 0, \forall r > R
