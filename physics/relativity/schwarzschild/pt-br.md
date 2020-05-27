@@ -47,7 +47,7 @@ $$
 T^{0b} = 
         \dfrac{\partial p^0}{\partial S_b} = 
         \dfrac{\partial m}{\partial x_0 \partial x_a \partial x_c} = 
-        \dfrac{\partial}{\partial x_a \partial x_c}\dfrac{\partial m}{\partial t} = 0
+        \dfrac{\partial^2}{\partial x_a \partial x_c}\dfrac{\partial m}{\partial t} = 0
 $$
 
 Assim, o que se chega é que o único valor não nulo do tensor de energia-momentum é
