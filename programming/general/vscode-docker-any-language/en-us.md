@@ -5,7 +5,7 @@ description: a starter guide with vscode ide for (almost) any language you want 
 language: english
 category: blog
 outdated: false
-thumbnail: "./images/thumbnail.png"
+thumbnail: "./images/two-woman-sitting-on-sofa-while-using-laptops.jpg"
 keywords:
   - tutorial
   - vscode
