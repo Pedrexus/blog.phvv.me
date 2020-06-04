@@ -27,6 +27,7 @@ all (or most) of the blog posts you can find at https://phvv.me
 
 - [] split blog and content - create twitter like view of blog
 - [] menu page: display all content posts
+- [] 404 page
 - [] table of contents sidebar
 - [] responsive design (refactor design sheets)
 

@@ -3,7 +3,7 @@ title: How to start programming any language easy and fast
 date: "2020-05-12"
 description: a starter guide with vscode ide for (almost) any language you want to start to learn and develop
 language: english
-category: blog
+category: post
 outdated: false
 thumbnail: "./images/two-woman-sitting-on-sofa-while-using-laptops.jpg"
 keywords:

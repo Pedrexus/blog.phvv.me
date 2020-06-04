@@ -3,7 +3,7 @@ title: Demonstração da Métrica de Schwarzschild
 date: '2020-05-25'
 description: Demonstração da Métrica de Schwarzschild da Relatividade Geral a partir das equações de campo de Einstein com as coordenadas de Schwarzshild
 language: português
-category: blog
+category: post
 ---
 
 As equações de campo de Einstein carregam toda a essência e todos os princípios por detrás da Relatividade Geral. Curiosamente, em notação tensorial, elas se reduzem a uma única expressão aparentemente muito simplória.
