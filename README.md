@@ -39,5 +39,6 @@ all (or most) of the blog posts you can find at https://phvv.me
 - [] dark mode (5 posts)
 - [] functionality sidebar (8 posts)
 - [] remake homepage as menu (10 posts)
+- [] comment section (13 posts)
 - [] search bar (15 posts)
 - [] complexity graph view (20 posts)
