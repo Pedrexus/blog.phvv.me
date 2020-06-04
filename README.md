@@ -13,11 +13,14 @@ all (or most) of the blog posts you can find at https://phvv.me
 
 - [x] VS Code + Docker
 - [x] css styling
+- [] make bonus: how to change git remote
 
 ### Creating content
 
 - [] python fast snippets
 - [] working with github and travis-ci
+- [] debugging python with vscode
+- [] debugging python django with vscode
 - [] how to deploy django easy, fast and free
 
 ### Showing the content
@@ -34,6 +37,7 @@ all (or most) of the blog posts you can find at https://phvv.me
 ### Extra functionalities
 
 - [] dark mode (5 posts)
-- [] functionality sidebar (10 posts)
+- [] functionality sidebar (8 posts)
+- [] remake homepage as menu (10 posts)
 - [] search bar (15 posts)
 - [] complexity graph view (20 posts)
