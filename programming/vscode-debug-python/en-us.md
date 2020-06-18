@@ -15,6 +15,7 @@ keywords:
 ---
 
 <!-- review keywords -->
+<!-- link to github -->
 
 Debugging is a essential task as a developer and learning the different available debugging tools are a good way to understand more how to do it properly. 
 
@@ -973,7 +974,9 @@ Since we chose the `python` debugger, there is a collection of attributes we can
 
 ![vscode launch.json adding attribute intellisense](./images/launch-json-attribute-intellisense.png)
 
-## Conclusions
+## Conclusion
+
+<!-- make it as list -->
 
 This tutorial showed what debugging is really about and how to do it with different tools. We've seen that debugging is a method of investigating code and can be used to learn what a program does and to remove its problems. 
 
