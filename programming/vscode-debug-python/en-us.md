@@ -6,7 +6,6 @@ description: a tutorial on how to exploit vs code debugging tools with python ..
 language: english
 category: post
 outdated: false
-thumbnail: ''
 github: https://github.com/phvv-me/vscode-python-debug.git
 keywords:
   - python

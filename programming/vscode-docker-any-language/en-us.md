@@ -5,7 +5,10 @@ description: a starter guide with vscode ide for (almost) any language you want 
 language: english
 category: post
 outdated: false
-thumbnail: "./images/two-woman-sitting-on-sofa-while-using-laptops.jpg"
+thumbnail: 
+   url: ./images/two-woman-sitting-on-sofa-while-using-laptops.jpg
+   author: ''
+   source: iconscout
 keywords:
   - tutorial
   - vscode
