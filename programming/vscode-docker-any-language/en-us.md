@@ -7,8 +7,9 @@ category: post
 outdated: false
 thumbnail: 
    url: ./images/two-woman-sitting-on-sofa-while-using-laptops.jpg
-   author: ''
-   source: iconscout
+   description: two woman sitting on sofa while using laptops
+   author: Christina @ wocintechchat.com
+   source: Unsplash
 keywords:
   - tutorial
   - vscode

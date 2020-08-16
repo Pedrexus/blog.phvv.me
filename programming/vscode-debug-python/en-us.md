@@ -6,6 +6,11 @@ description: a tutorial on how to exploit vs code debugging tools with python ..
 language: english
 category: post
 outdated: false
+thumbnail:
+   url: ./images/woman-reading-java-book-on-sofa.jpg
+   description: woman reading java book on sofa
+   author: Christina @ wocintechchat.com
+   source: Unsplash
 github: https://github.com/phvv-me/vscode-python-debug.git
 keywords:
   - python
