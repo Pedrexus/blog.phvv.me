@@ -373,6 +373,5 @@ class BaseFruitModel(ABC):
 
 For most cases, this approach might seem overkill, I know, but some time ago I had to use a pattern just like this while developing a function that would select a _neural network model_ based on input data. As I was using class-based models in `tensorflow` already, this `BaseRegistry` class came as a _mixin_ to each of my custom models. Then, it became much easier to perform the _model selection_.
 
-## Conclusions
-
-I hope you enjoyed this post. Don't hesitate to leave a comment.
+<!-- ## Conclusions - write me -->
+<!-- I hope you enjoyed this post. Don't hesitate to leave a comment. -->
