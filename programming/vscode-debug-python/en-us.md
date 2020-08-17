@@ -7,9 +7,9 @@ language: english
 category: post
 outdated: false
 thumbnail:
-   url: ./images/woman-reading-java-book-on-sofa.jpg
-   description: woman reading java book on sofa
-   author: Christina @ wocintechchat.com
+   url: ./images/orange-playmobil-looking-at-red-beetle-toy-car.jpg
+   description: orange playmobil looking at red beetle toy car
+   author: Steinar Engeland
    source: Unsplash
 github: https://github.com/phvv-me/vscode-python-debug.git
 keywords:
