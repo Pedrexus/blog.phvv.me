@@ -1,7 +1,8 @@
 ---
 title: How to start programming any language easy and fast
+headline: How to setup vscode and docker to start programming in any language easy and fast
 date: "2020-05-12"
-description: a starter guide with vscode ide for (almost) any language you want to start to learn and develop
+description: a starter guide with vscode and docker for (almost) any language you want to start learning and developing - python, javascript, C#, rust, etc.
 language: english
 category: post
 outdated: false
@@ -105,8 +106,8 @@ So you want to try a new programming language and don't know how to start, what 
 #### Install Visual Studio Code on Windows
 
 1. download Visual Studio Code for Windows clicking [here][vscode windows installer].
-2. Once it is downloaded, run the installer (.exe file).
-3. VS Code is by default installed at `C:\users\{username}\AppData\Local\Programs\Microsoft VS Code`
+2. once it is downloaded, run the installer (.exe file).
+3. VS Code is by default installed at <i code>`C:\users\{username}\AppData\Local\Programs\Microsoft VS Code`</i>
 4. if you find any problems, look the [official Windows install guide][vscode windows install guide].
 
 [vscode windows installer]: https://code.visualstudio.com/docs?dv=win
@@ -187,7 +188,10 @@ Below you'll find some explanations about all the project files. If you're just 
 #### How to run your `vscode-remote-try-python` project
 
 1. Open the VS Code terminal window. Notice it is already connected to the docker container.
-2. In the terminal, type `python -m flask run --port 9000 --no-debugger --no-reload` to run the app.
+2. In the terminal, type the command below to run the app.
+   ```bash 
+   python -m flask run --port 9000 --no-debugger --no-reload
+   ``` 
 3. Open your browser (Safari, Edge, Firefox, Chrome, Opera, ...) and go to http://localhost:9000 to see the running app.
 
 ### Start a new javascript project
@@ -367,10 +371,13 @@ In this tutorial, we learned how to start a new project from a variety of langua
 
 **Happy Coding! 🧑🏻‍💻**
 
+<!-- 
 ## references
 
 - https://code.visualstudio.com/remote-tutorials/containers/how-it-works
 - https://code.visualstudio.com/docs/remote/containers
 - https://code.visualstudio.com/docs/editor/tasks
 - https://docs.docker.com/engine/reference/builder/
-- https://choosealicense.com/licenses/mit/
+- https://choosealicense.com/licenses/mit/ 
+
+-->

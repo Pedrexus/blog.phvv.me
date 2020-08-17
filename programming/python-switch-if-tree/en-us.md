@@ -2,7 +2,7 @@
 title: 3 ways to refactor if...else trees in python
 headline: 3 ways to refactor if trees with elegant patterns in python
 date: '2020-08-08'
-description: This is a tutorial on how to refactor existing python code if trees into switch patterns using dictionaries, classes and more.
+description: how to refactor existing python code if trees into switch patterns using dictionaries, classes and more.
 language: english
 category: post
 outdated: false
@@ -305,7 +305,7 @@ class BananaModel(BaseFruitModel, fruit="banana"):
         return "peeled 12 bananas"
 ```
 
-Now, whenever I want to add a new fruit, I just need to come to the bottom of this file and add my new _Fruit_ class subclassing `BaseFruitModel` and setting a fruit. It is even possible to automate the the `registry` key definition with `BaseFruitModel.registry[cls.__name__] = cls` if you want to.
+Now, whenever I want to add a new fruit, I just need to come to the bottom of this file and add my new _Fruit_ class subclassing `BaseFruitModel` and setting a fruit. It is even possible to automate the the `registry` key definition by using the class name as key with `cls.__name__` if you want to.
 
 ```python
 class BaseRegistry():
