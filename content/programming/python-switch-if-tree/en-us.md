@@ -7,7 +7,7 @@ language: english
 category: post
 outdated: false
 thumbnail:
-    url: ./images/mountain-landscape-with-signs-pointing-toward-a-rocky-hiking-path.jpg
+    url: ../../images/mountain-landscape-with-signs-pointing-toward-a-rocky-hiking-path.jpg
     description: Mountain landscape with signs pointing toward a rocky hiking path
     author: Jonas Verstuyft
     source: Unsplash

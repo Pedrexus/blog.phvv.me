@@ -7,7 +7,7 @@ language: english
 category: post
 outdated: false
 thumbnail: 
-   url: ./images/two-woman-sitting-on-sofa-while-using-laptops.jpg
+   url: ../../images/two-woman-sitting-on-sofa-while-using-laptops.jpg
    description: two woman sitting on sofa while using laptops
    author: Christina @ wocintechchat.com
    source: Unsplash
