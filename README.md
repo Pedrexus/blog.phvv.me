@@ -11,35 +11,38 @@ all (or most) of the blog posts you can find at https://phvv.me
 
 ### Making the first post
 
-- [x] VS Code + Docker
+- [x] content
 - [x] css styling
-- [ ] make bonus: how to change git remote
-
-### Creating content
-
-- [ ] python fast snippets
-- [ ] working with github and travis-ci
-- [ ] debugging python with vscode
-- [ ] debugging python django with vscode
-- [ ] how to deploy django easy, fast and free
 
 ### Showing the content
 
-- [ ] split blog and content - create twitter like view of blog
-- [ ] menu page: display all content posts
-- [ ] 404 page
-- [ ] table of contents sidebar
-- [ ] responsive design (refactor design sheets)
-
-### More content
-
-+n posts to be chosen -> mostly programming
+- [x] split blog and content
+- [x] 404 page
+- [x] responsive design (refactor design sheets)
 
 ### Extra functionalities
 
+- [x] remake homepage as menu (2 posts)
+- [ ] table of contents sidebar (3 posts)
+- [ ] comment section (4 posts)
 - [ ] dark mode (5 posts)
-- [ ] functionality sidebar (8 posts)
-- [ ] remake homepage as menu (10 posts)
-- [ ] comment section (13 posts)
-- [ ] search bar (15 posts)
-- [ ] complexity graph view (20 posts)
+- [ ] search bar (10 posts)
+- [ ] complexity graph view (15 posts)
+
+### Home
+
+- [x] post grid
+- [ ] special book card
+- [ ] by keyword "app store-like" section
+- [ ] featured/recent posts
+
+### Blog
+
+- [ ] "twitter-like" view
+- [ ] shorter scrolling
+
+### Posts
+
+- [x] clean header
+- [ ] pagination for book category
+- [ ] "see the code [github icon]" button
