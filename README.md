@@ -29,6 +29,10 @@ all (or most) of the blog posts you can find at https://phvv.me
 - [ ] search bar (10 posts)
 - [ ] complexity graph view (15 posts)
 
+### SEO
+
+- [ ] optimize page load speed
+
 ### Home
 
 - [x] post grid
