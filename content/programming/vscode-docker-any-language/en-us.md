@@ -6,11 +6,12 @@ description: a starter guide with vscode and docker for (almost) any language yo
 language: english
 category: post
 outdated: false
-thumbnail: 
-   url: ../../images/two-woman-sitting-on-sofa-while-using-laptops.jpg
-   description: two woman sitting on sofa while using laptops
-   author: Christina @ wocintechchat.com
-   source: Unsplash
+thumbnail:
+  src: ../../images/two-woman-sitting-on-sofa-while-using-laptops.jpg
+  alt: two women sitting on sofa while using laptops
+  author:
+    name: Christina @ wocintechchat.com
+    href: wocintechchat.com
 keywords:
   - tutorial
   - vscode
@@ -26,22 +27,22 @@ keywords:
 <!-- ::curious cat : someone who wants fast info and will skim the text for the necessary info. -->
 <!-- 1. **bonus** - start a github project - before conclusion -->
 
-## Contents
+<!-- ## Contents
 
 - [Install Docker](#install-docker)
 - [Install Visual Studio Code](#install-visual-studio-code)
 - [Install the Remote Dev Extension](#install-remote-development-extension-pack)
 - [Start with Python](#start-a-new-python-project)
-- [Start with Javascript](#start-a-new-javascript-project)
+- [Start with javascript](#start-a-new-javascript-project)
 - [Start with C#](#start-a-new-c-net-core-project)
 - [Conclusions](#conclusions)
 - [References](#references)
 
----
+--- -->
 
-So you want to try a new programming language and don't know how to start, what to install nor with which language should you start. That's fine, I tell you. This tutorial is designed to enable you a fast and easy start for any new project or computer idea you might have.
+So you want to try a new programming language and don't know how to start, what to install nor which language to choose. Worry no more. This tutorial is designed to **enable you a fast and easy start** for any new project or computer idea you might have.
 
-> **Note:** this is the basic tutorial for every other programming project in this website. Therefore, if you'd like to repeat my steps in another tutorial, this is the start of it.
+> **Note:** this is the basic tutorial for every other programming project in this website. Therefore, if you'd like to repeat my steps in another tutorial, this is the way to begin.
 
 ### Install Docker
 
@@ -55,21 +56,21 @@ So you want to try a new programming language and don't know how to start, what 
     ❯ sudo apt-get install docker-ce docker-ce-cli containerd.io
     ```
 
-3.  For detailed instructions, refer to the [official docker engine installation guide][docker engine installation guide].
+3. for detailed instructions, refer to the [official docker engine installation guide][docker engine installation guide].
 
 [docker engine installation guide]: https://docs.docker.com/engine/install/
 
 #### Install Docker on MacOS
 
 1. download Docker Desktop (Stable) for MacOS clicking [here][docker installer].
-2. Once it is downloaded, look for `Docker.dmg` file on Finder and click it.
-3. For detailed instructions, refer to the [official documentation][vscode docker remote containers docs].
+2. once it is downloaded, look for `Docker.dmg` file on Finder and click on it.
+3. for detailed instructions, refer to the [official documentation][vscode docker remote containers docs].
 
 #### Install Docker on Windows
 
 1. download Docker Desktop (Stable) for Windows clicking [here][docker installer].
-2. Once it is downloaded, run the installer `Docker Desktop Installer.exe` file. You may need to restart your PC.
-3. For detailed instructions, refer to the [official documentation][vscode docker remote containers docs].
+2. once it is downloaded, run the installer `Docker Desktop Installer.exe` file. You may need to restart your PC.
+3. for detailed instructions, refer to the [official documentation][vscode docker remote containers docs].
 
 [docker installer]: https://www.docker.com/products/docker-desktop
 [vscode docker remote containers docs]: https://code.visualstudio.com/docs/remote/containers
@@ -97,7 +98,7 @@ So you want to try a new programming language and don't know how to start, what 
 1. download Visual Studio Code for macOS clicking [here][vscode macos installer].
 2. open Finder and type `Visual Studio Code` on the search bar.
 3. drag `Visual Studio Code.app` to the `Applications` folder, making it available in the macOS Launchpad.
-4. add VS Code to your Dock by right-clicking on the icon to bring up the context menu and choosing **Options**, **Keep in Dock**.
+4. add vscode to your Dock by right-clicking on the icon to bring up the context menu and choosing **Options**, **Keep in Dock**.
 5. if you find any problems, look the [official MacOS install guide][vscode macos install guide].
 
 [vscode macos installer]: https://code.visualstudio.com/docs?dv=osx
@@ -106,8 +107,8 @@ So you want to try a new programming language and don't know how to start, what 
 #### Install Visual Studio Code on Windows
 
 1. download Visual Studio Code for Windows clicking [here][vscode windows installer].
-2. once it is downloaded, run the installer (.exe file).
-3. VS Code is by default installed at <i code>`C:\users\{username}\AppData\Local\Programs\Microsoft VS Code`</i>
+2. once it is downloaded, run the installer (click on the `.exe` file).
+3. vscode is by default installed at <i code>`C:\users\{username}\AppData\Local\Programs\Microsoft vscode`</i>
 4. if you find any problems, look the [official Windows install guide][vscode windows install guide].
 
 [vscode windows installer]: https://code.visualstudio.com/docs?dv=win
@@ -115,18 +116,19 @@ So you want to try a new programming language and don't know how to start, what 
 
 ### Install Remote Development extension pack
 
-With Docker and Visual Studio Code installed, we just need the **Remote Development VS Code extension**. Click on the link below to go to the download page.
+With Docker and Visual Studio Code installed, we just need the **Remote Development vscode extension**. Click on the link below to go to the download page.
 
+<!-- TODO: componentize -->
 [link to remote development extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
 
 ### Start a new python project
 
-1. Click on the new symbol in the lower left corner. A dropdown list of options will appear.
-2. Select **Remote-Containers: Try a Sample...** from the command list. A list of the available languages will be shown.
-3. Choose **Python**. The screen will blink and start downloading the images to start your project.
-4. This step may take from **5 to 15 minutes**. Wait for it to finish.
-5. After the download is over, on VS Code, an **workspace** will be created with the project files.
-6. If you have any doubts, **check the video below** to see each step exactly.
+1. click on the new symbol in the lower left corner. A dropdown list of options will appear.
+2. select **Remote-Containers: Try a Sample...** from the command list. A list of the available languages will be shown.
+3. choose **Python**. The screen will blink and start downloading the images to start your project.
+4. this step may take from **5 to 15 minutes**. Wait for it to finish.
+5. after the download is over, on vscode, an **workspace** will be created with the project files.
+6. if you have any doubts, **check the video below** to see each step exactly.
 
 `video: title: "create vscode python project": ./videos/python.mov`
 
@@ -134,23 +136,24 @@ With Docker and Visual Studio Code installed, we just need the **Remote Developm
 
 Below you'll find some explanations about all the project files. If you're just beginning or new to python, focus on the `.py` file and don't worry much about the others. Any important files ones will be highlighted or emphasized.
 
-<FileTreeView placeholder="VS Code project explorer. Click an icon on the left to see some explanations.">
+<FileTreeView placeholder="vscode project explorer. Click an icon on the left to see some explanations.">
   <Folder name=".devcontainer">
-    VS Code Remote Containers extension specific folder. It uses `devcontainer.json` and an optional `Dockerfile` or
-    `docker-compose.yml` to create the development containers.
+    vscode Remote Containers extension specific folder. It uses <code>devcontainer.json</code> and an optional
+    <code>Dockerfile</code> or <code>docker-compose.yml</code> to create the development containers.
     <File name="devcontainer.json">
       After the docker image is assembled by the Dockerfile, a container is created and started using the settings in
-      `devcontainer.json`. It can also modify some configurations of the Dockerfile, as for this project, the Python
-      version is redefined to 3.7 with the VARIANT arg. This file also contains settings for the Visual Studio Code
-      environment.
+      <code>devcontainer.json</code>. It can also modify some configurations of the Dockerfile, as for this project, the Python
+      version is redefined to 3.7 with the VARIANT arg. This file also contains settings
+      for the Visual Studio Code environment.
     </File>
     <File name="Dockerfile">
-      This file is referenced at `devcontainer.json` to assemble an docker image. Then a container is created and
-      started using some of the settings in `devcontainer.json`.
+      This file is referenced at `devcontainer.json` to 
+      <a href="https://docs.docker.com/engine/reference/builder/">assemble a docker image</a>.
+      Then, a container is created and started using some of the settings in `devcontainer.json`.
     </File>
   </Folder>
   <Folder name=".vscode">
-    VS Code settings folder. Used for project specific configurations.
+    vscode settings folder. It is used for project specific configurations.
     <File name="launch.json">
       This file has running and debugging configuration information. It is very useful for automation and storing some
       environment variables for development purposes.
@@ -158,7 +161,7 @@ Below you'll find some explanations about all the project files. If you're just 
   </Folder>
   <Folder name="static">
     A folder for all the static files: files that never change and can be send as they are. In web projects, they
-    usually have images, icons, `HTML`, `CSS` and `JavaScript` files.
+    usually have images, icons, `HTML`, `CSS` and `javascript` files.
     <File name="index.html">
       A simple `.html` file with the landing page that will be sent by the server created by `app.py`.
     </File>
@@ -173,7 +176,7 @@ Below you'll find some explanations about all the project files. If you're just 
   <File name="app.py">The python file. It starts a flask server that sends the `index.html` file.</File>
   <File name="LICENSE">
     An open source license file. It specifies how you, me and other developers can use this project. In our case, we
-    have a MIT License.
+    have a <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.
   </File>
   <File name="README.md">
     This is a very common file among programming projects. It is a markdown file with instructions on how to start the
@@ -187,12 +190,12 @@ Below you'll find some explanations about all the project files. If you're just 
 
 #### How to run your `vscode-remote-try-python` project
 
-1. Open the VS Code terminal window. Notice it is already connected to the docker container.
+1. Open the vscode terminal window. Notice it is already connected to the docker container.
 2. In the terminal, type the command below to run the app.
-   ```bash 
+   ```bash
    python -m flask run --port 9000 --no-debugger --no-reload
-   ``` 
-3. Open your browser (Safari, Edge, Firefox, Chrome, Opera, ...) and go to http://localhost:9000 to see the running app.
+   ```
+3. Open your browser (Safari, Edge, Firefox, Chrome, Opera, ...) and go to [http://localhost:9000](http://localhost:9000) to see the running app.
 
 ### Start a new javascript project
 
@@ -200,7 +203,7 @@ Below you'll find some explanations about all the project files. If you're just 
 2. Select **Remote-Containers: Try a Sample...** from the command list. A list of the available languages will be shown.
 3. Choose **Node**. The screen will blink and start downloading the images to start your project.
 4. This step may take from **5 to 15 minutes**. Wait for it to finish.
-5. After the download is over, on VS Code, an **workspace** will be created with the project files.
+5. After the download is over, on vscode, an **workspace** will be created with the project files.
 6. If you have any doubts, **check the video below** to see each step exactly.
 
 `video: title: "create vscode node project": ./videos/node.mov`
@@ -209,9 +212,9 @@ Below you'll find some explanations about all the project files. If you're just 
 
 Below you'll find some explanations about all the project files. If you're just beginning or new to javascript, focus on the `.js` file and don't worry much about the others. Any important files ones will be highlighted or emphasized.
 
-<FileTreeView placeholder="VS Code project explorer. Click an icon on the left to see some explanations.">
+<FileTreeView placeholder="vscode project explorer. Click an icon on the left to see some explanations.">
   <Folder name=".devcontainer">
-    VS Code Remote Containers extension specific folder. It uses <code>devcontainer.json</code> and an optional
+    vscode Remote Containers extension specific folder. It uses <code>devcontainer.json</code> and an optional
     <code>Dockerfile</code> or <code>docker-compose.yml</code> to create the development containers.
     <File name="devcontainer.json">
       After the docker image is assembled by the Dockerfile, a container is created and started using the settings in
@@ -219,12 +222,13 @@ Below you'll find some explanations about all the project files. If you're just 
       for the Visual Studio Code environment.
     </File>
     <File name="Dockerfile">
-      This file is referenced at <code>devcontainer.json</code> to assemble an docker image. Then a container is created
-      and started using some of the settings in <code>devcontainer.json</code>.
+      This file is referenced at <code>devcontainer.json</code> to 
+      <a href="https://docs.docker.com/engine/reference/builder/">assemble a docker image</a>. 
+      Then a container is created and started using some of the settings in <code>devcontainer.json</code>.
     </File>
   </Folder>
   <Folder name=".vscode">
-    VS Code settings folder. Used for project specific configurations.
+    vscode settings folder. Used for project specific configurations.
     <File name="launch.json">
       This file has running and debugging configuration information. It is very useful for automation and storing some
       environment variables for development purposes.
@@ -247,7 +251,7 @@ Below you'll find some explanations about all the project files. If you're just 
   </File>
   <File name="LICENSE">
     An open source license file. It specifies how you, me and other developers can use this project. In our case, we
-    have a MIT License.
+    have a <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.
   </File>
   <File name="package.json">
     This is very common file among javascript projects. It contains several settings on how to start running the project
@@ -269,8 +273,8 @@ Below you'll find some explanations about all the project files. If you're just 
 
 #### How to run your `vscode-remote-try-node` project
 
-1. Press <kbd>F5</kbd> to launch the app in the container. The file `launch.json` has configured VS Code how to start it. It will be started in debugging mode.
-2. Open your browser (Safari, Edge, Firefox, Chrome, Opera, ...) and go to http://localhost:9000 to see the running app.
+1. Press <kbd>F5</kbd> to launch the app in the container. The file `launch.json` has configured vscode how to start it. It will be started in debugging mode.
+2. Open your browser (Safari, Edge, Firefox, Chrome, Opera, ...) and go to [http://localhost:9000](http://localhost:9000) to see the running app.
 
 ### Start a new C# .NET Core project
 
@@ -278,7 +282,7 @@ Below you'll find some explanations about all the project files. If you're just 
 2. Select **Remote-Containers: Try a Sample...** from the command list. A list of the available languages will be shown.
 3. Choose **.NET Core**. The screen will blink and start downloading the images to start your project.
 4. This step may take from **5 to 15 minutes**. Wait for it to finish.
-5. After the download is over, on VS Code, an **workspace** will be created with the project files.
+5. After the download is over, on vscode, an **workspace** will be created with the project files.
 6. If you have any doubts, **check the video below** to see each step exactly.
 
 `video: title: "create vscode dotnetcore project": ./videos/dotnetcore.mov`
@@ -287,9 +291,9 @@ Below you'll find some explanations about all the project files. If you're just 
 
 Below you'll find some explanations about all the project files. If you're just beginning or new to C#, focus on the `.cs` file and don't worry much about the others. Any important files will be highlighted or emphasized.
 
-<FileTreeView placeholder="VS Code project explorer. Click an icon on the left to see some explanations.">
+<FileTreeView placeholder="vscode project explorer. Click an icon on the left to see some explanations.">
   <Folder name=".devcontainer">
-    VS Code Remote Containers extension specific folder. It uses <code>devcontainer.json</code> and an optional
+    vscode Remote Containers extension specific folder. It uses <code>devcontainer.json</code> and an optional
     <code>Dockerfile</code> or <code>docker-compose.yml</code> to create the development containers.
     <File name="devcontainer.json">
       After the docker image is assembled by the Dockerfile, a container is created and started using the settings in
@@ -297,18 +301,19 @@ Below you'll find some explanations about all the project files. If you're just 
       for the Visual Studio Code environment.
     </File>
     <File name="Dockerfile">
-      This file is referenced at <code>devcontainer.json</code> to assemble an docker image. Then a container is created
-      and started using some of the settings in <code>devcontainer.json</code>.
+      This file is referenced at <code>devcontainer.json</code> to 
+      <a href="https://docs.docker.com/engine/reference/builder/">assemble a docker image</a>. 
+      Then a container is created and started using some of the settings in <code>devcontainer.json</code>.
     </File>
   </Folder>
   <Folder name=".vscode">
-    VS Code settings folder. Used for project specific configurations.
+    vscode settings folder. Used for project specific configurations.
     <File name="launch.json">
       This file has running and debugging configuration information. It is very useful for automation and storing some
       environment variables for development purposes.
     </File>
     <File name="tasks.json">
-      This file define some scripts that can be used by VS Code in <code>launch.json</code> for instance. In our case, the tasks <code>build</code>, <code>publish</code> and <code>watch</code> are defined in this file. The <code>build</code> task is then referenced in <code>launch.json</code>.
+      This file <a href="https://code.visualstudio.com/docs/editor/tasks">define some scripts that can be used by vscode</a> in <code>launch.json</code> for instance. In our case, the tasks <code>build</code>, <code>publish</code> and <code>watch</code> are defined in this file. The <code>build</code> task is then referenced in <code>launch.json</code>.
     </File>
   </Folder>
   <Folder name="bin" closed gray>
@@ -334,7 +339,7 @@ Below you'll find some explanations about all the project files. If you're just 
   </File>
   <File name="LICENSE">
     An open source license file. It specifies how you, me and other developers can use this project. In our case, we
-    have a MIT License.
+    have a <a href="https://choosealicense.com/licenses/mit/">MIT License</a>.
   </File>
   <File name="program.cs">
     The C# file. It starts an ASP.NET Core server that sends a 'Hello World' message.
@@ -347,37 +352,30 @@ Below you'll find some explanations about all the project files. If you're just 
 
 #### How to run your `vscode-remote-try-dotnetcore` project
 
-1. Press <kbd>F5</kbd> to launch the app in the container. The file `launch.json` has configured VS Code how to start it. It will be started in debugging mode.
-2. Open your browser (Safari, Edge, Firefox, Chrome, Opera, ...) and go to http://localhost:5000 to see the running app.
+1. Press <kbd>F5</kbd> to launch the app in the container. The file `launch.json` has configured vscode how to start it. It will be started in debugging mode.
+2. Open your browser (Safari, Edge, Firefox, Chrome, Opera, ...) and go to [http://localhost:5000](http://localhost:5000) to see the running app.
 
 ## Conclusions
 
-In this tutorial, we learned how to start a new project from a variety of languages easily. For that, we installed the Docker container platform, the Visual Studio Code IDE and the Remote Development VS Code extension. These tools are useful if you are starting a new project or want to start learning a new programming language. A few remarks and observations are listed below about this approach.
+In this tutorial, we learned how to start a new project from a variety of languages easily. For that, we installed the Docker container platform, the Visual Studio Code Editor and the Remote Development vscode extension. These tools are useful if you are starting a new project or want to start learning a new programming language. A few remarks and observations are listed below about this approach.
 
 1. **Simplicity:**
-   - We barely had to use the terminal or make any hard installation ourselves to start coding.
-   - We can repeat the same steps (besides installation) to try another language.
-   - Most of the "hard work" and "headaches" that beginners suffer when trying a new language are already done.
+   - simple installation previous to coding.
+   - we can **try another language in vscode** just by repeating the same steps.
+   - we didn't face any of the _"headaches"_ that beginners suffer when trying a new language.
 2. **Security:**
-   - Docker brings a very big safety constraint. Therefore, you can play and try anything you want without worrying about damaging anything in your computer.
+   - Docker creates a **safety layer**. Therefore, you can play and try anything you want without worrying about damaging anything in your computer.
 3. **Containerization:**
-   - Since we are talking about Docker: It will **always** work in your machine!
-   - We don't need to worry about creating virtual environments. The Docker container functions as one.
-   - We don't need to download VS Code extensions for each language. VS Code server installs all the necessary extensions automatically based on the language you choose.
+   - Docker: It will **always** work in your machine!
+   - No virtual environments. The Docker container works as one.
+   - We don't need to download vscode extensions for each language. vscode server installs all the necessary extensions automatically based on the language you choose.
 4. **Disadvantages:**
-   - **Startup:** the first time you start your application will be slow, as VS Code has to download and build the Docker images. _P.S.: I know I wrote **fast** in the title, but I am considering the amount of time the average person would have troubleshooting everything that could go wrong with installing each language, especially for beginners._
+   - **Startup:** the first time you start your application will be slow, as vscode has to download and build the Docker images. _P.S.: I know I wrote **fast** in the title, but I am considering the amount of time the average person would have troubleshooting everything that could go wrong with installing each language, especially beginners._
    - **Memory:** Docker containers add some overhead to MacOS and Windows applications, but usually you won't notice that. Look at Docker Desktop for more info about your containers.
-   - **Absolute Beginners:** If you are just starting to learn how to program, some of the steps could be seen as too much, especially the Docker part. As I said before, try not to worry too much about it: you'll see that a lot of things in programming mix different technologies and I believe it's important to get used to it.
+   - **Absolute Beginners:** If you are just starting to learn how to program, some of the steps could come as difficult, especially the Docker part. As I said before, try not to worry too much about it: you'll see that a lot of things in programming mix different technologies and I believe it's important to get used to it from the start.
 
 **Happy Coding! 🧑🏻‍💻**
 
-<!-- 
-## references
+## Further Reading
 
-- https://code.visualstudio.com/remote-tutorials/containers/how-it-works
-- https://code.visualstudio.com/docs/remote/containers
-- https://code.visualstudio.com/docs/editor/tasks
-- https://docs.docker.com/engine/reference/builder/
-- https://choosealicense.com/licenses/mit/ 
-
--->
+Microsoft has all the process of [Setting the Container Development in vscode](https://code.visualstudio.com/remote-tutorials/containers/how-it-works) and [Developing inside a Container](https://code.visualstudio.com/docs/remote/containers) well documented. It's definitely worth checking it out.
