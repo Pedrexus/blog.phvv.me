@@ -65,13 +65,6 @@ Python is a language that has many different aspects when compared to other low 
 
 ## The problem at hand
 
-- python switch
-- python switch case
-- does python have a switch case syntax?
-- python switch statement
-- python case statement
-- switch python 3
-
 One of the most common subjects of question among python rookies is how to build a _switch...case_ like pattern in python. If you are unaware of what I'm talking about, you can see below how the `SWITCH...CASE` syntax looks like on the C language.
 
 ```C
