@@ -1,22 +1,24 @@
 ---
-title: 3 ways to refactor if...else trees in python
-headline: 3 ways to refactor if trees with elegant patterns in python
-date: '2020-08-08'
+title: 3 ways to build a SWITCH in python
+headline: 3 ways to refactor if trees with patterns like SWITCH...CASE in python
+date: "2020-08-08"
 description: how to refactor existing python code if trees into switch patterns using dictionaries, classes and more.
 language: english
 category: post
 outdated: false
 thumbnail:
-    url: ../../images/mountain-landscape-with-signs-pointing-toward-a-rocky-hiking-path.jpg
-    description: Mountain landscape with signs pointing toward a rocky hiking path
-    author: Jonas Verstuyft
-    source: Unsplash
+  src: ../../images/mountain-landscape-with-signs-pointing-toward-a-rocky-hiking-path.jpg
+  alt: Mountain landscape with signs pointing toward a rocky hiking path
+  author:
+    name: Jonas Verstuyft
+    href: https://unsplash.com/@verstuyftj
 github: https://github.com/phvv-me/python-switch-if-tree.git
 keywords:
   - python
   - patterns
   - refactoring
   - classes
+  - easy-to-refactor
 ---
 
 <!--
@@ -63,8 +65,50 @@ Python is a language that has many different aspects when compared to other low 
 
 ## The problem at hand
 
-One of the most common subjects of question among python rookies is how to build a _switch-like_ pattern. That is totally understandable, as even low level languages have `SWITCH` as a common keyword. However, python has no `SWITCH` as you know it.
-Therefore, we come to see `if...else` trees very often
+- python switch
+- python switch case
+- does python have a switch case syntax?
+- python switch statement
+- python case statement
+- switch python 3
+
+One of the most common subjects of question among python rookies is how to build a _switch...case_ like pattern in python. If you are unaware of what I'm talking about, you can see below how the `SWITCH...CASE` syntax looks like on the C language.
+
+```C
+switch(color)
+​{
+    case "blue":
+        printf("The sky is blue");
+        break;
+
+    case "yellow":
+        printf("The sun is yellow");
+        break;
+
+    case "red":
+        printf("Blood is red");
+        break;
+
+    default:
+        printf("I can't thing of anything with that color");
+
+}
+```
+
+That is the reason why many people ask if python has a switch case syntax. That is totally understandable, as many low and high level languages have `SWITCH` as a common keyword. However, python has no `SWITCH` or `CASE` statement as you know it. Therefore, very often we come to see the logic of that C snippet as `if...else` trees
+
+```python
+if color == "blue":
+    print("The sky is blue")
+elif color == "yellow":
+    print("The sun is yellow")
+elif color == "red":
+    print("Blood is red")
+else:
+    print("I can't thing of anything with that color")
+```
+
+This might look as harmless for now, but in my experience, code grows. Worse: it tends to grow around the initial pattern they were built with! Thus, we come to see very long `if...else` trees that would look really convoluted in the original `SWITCH...CASE` syntax in C as well.
 
 ```python
 name = "Thomas Walker"
@@ -110,7 +154,7 @@ else:
     initials = None
 ```
 
-This example above might seem useless, but the concept behind it is common while its structure is messy. Instead of getting `initials`, imagine calling a specific function that would send and e-mail customized by family name. Moreover, if this is found on a crucial point in a large codebase, it could definitely **harm the productivity** and be considered **technical debt** for hindering the code comprehension.
+The example above might seem useless, but the concept behind it is common while its structure is messy. Instead of getting `initials`, imagine calling a specific function that would send and e-mail customized by family name. Moreover, if this is found on a crucial point in a large codebase, it could definitely **harm the productivity** and be considered **technical debt** for hindering the code comprehension.
 
 ## Refactor: `dict`
 
@@ -144,7 +188,7 @@ names = "Thomas Walker".split()
 initials = switch.get(names[0]).get(names[1], f"{names[0]}.")
 ```
 
-As shown above, the simplest way to build the _switch pattern_ in python is with the `.get(key, default=None)` method in the `dict` data structure. It can perform exactly what `SWITCH` proposes, but in a much more readable fashion than `if...else` trees.
+As shown above, the simplest way to build the _switch pattern_ in python is with the `.get(key, default=None)` method in the `dict` data structure. It can perform exactly what `SWITCH...CASE` proposes, but in a much more readable fashion than `if...else` trees.
 
 I am not saying, however, that all `if...else` statements could nor should be refactored into dictionaries. What I am doing is showing a pattern that is much easier to read and to edit that the previous one. We still have to consider the logic behind it.
 
@@ -247,7 +291,7 @@ With the `reduce` function available in the python standard library, we can make
 
 ## Refactor: `__init_subclass__`
 
-The final `SWITCH` refactor I want to show in python might come off as _too much_, but it is the one I believe to be the most elegant of all. Besides, I actually used it in a real world project! Therefore, I think it is important to present it here.
+The final `SWITCH...CASE` refactor I want to show in python might come off as _too much_, but it is the one I believe to be the most elegant of all. Besides, I actually used it in a real world project! Therefore, I think it is important to present it here.
 
 ```python
 if fruit.kind == "apple":
@@ -373,5 +417,10 @@ class BaseFruitModel(ABC):
 
 For most cases, this approach might seem overkill, I know, but some time ago I had to use a pattern just like this while developing a function that would select a _neural network model_ based on input data. As I was using class-based models in `tensorflow` already, this `BaseRegistry` class came as a _mixin_ to each of my custom models. Then, it became much easier to perform the _model selection_.
 
-<!-- ## Conclusions - write me -->
-<!-- I hope you enjoyed this post. Don't hesitate to leave a comment. -->
+## Conclusions
+
+`if...else` trees are one of the most common code smells I find in python code. It is so simple to start an `if` statement to select something that is also very common to keep it there forever. 
+
+On the other hand, python offers patterns better than the traditional switch case syntax in an easy-to-refactor style. Therefore, if you've seen convoluted `if...else` trees in some code you're working on, this is your chance to refactor it.
+
+I hope you enjoyed this post and, as always, Happy Coding 🧑🏻‍💻
