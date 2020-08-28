@@ -990,5 +990,3 @@ Besides, Python is a programming language that comes with a debugger included. U
 Finally, we saw how to do all of the basic debugging process and much more with the Visual Studio Code IDE. Harnessing the power of your IDE is necessary for any professional developer, because it will lead you to better solutions faster and with less effort.
 
 There is much more to these python debugging tools than I can show here, but I believe that this should be a good introduction to beginners as well to seasoned programmers that use other tools or other languages.
-
-## Further Reading
