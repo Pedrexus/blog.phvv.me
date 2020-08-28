@@ -214,7 +214,7 @@ VS Code has a collection of specific and extension related settings that we can 
    }
    ```
    - `autopep8`, `black` and `yapf` are formatting tools. `autopep8` is the vscode default value.
-   - `bandit`, `flake8`, `mypy`, `pycodestyle`, `pydocstyle` and `pylint` are python linters. `pylint` is enabled as you can see through `"python.linting.pylintEnabled": true`.
+   - `bandit`, `flake8`, `mypy`, `pycodestyle`, `pydocstyle` and `pylint` are python linters. `pylint` is enabled as you can see through <i>`"python.linting.pylintEnabled": true`</i>.
 4. Let us now change these settings. At the `.vscode` folder, create a new `settings.json` file.
    - we could change the settings at `devcontainer.json`, but for them to take effect, a container rebuild would be necessary at every change. We will avoid it here.
 5. Click on the `.vscode/settings.json` file to open it.
@@ -228,10 +228,10 @@ VS Code has a collection of specific and extension related settings that we can 
      "python.linting.banditEnabled": true
    }
    ```
-   - `"python.formatting.provider": "black"`: we change the default formatter to `black`.
+   - <i> `"python.formatting.provider": "black"` </i>: we change the default formatter to `black`.
    - `"editor.formatOnSave": true`: every time a file is saved, it is automatically formatted.
    - `"files.autoSave": "onFocusChange"`: the files are automatically saved when the _editor focus_ changes (changing files, move tabs, etc.)
-   - `"python.linting.banditEnabled": true`: the `bandit` linter is enabled.
+   - <i> `"python.linting.banditEnabled": true` </i>: the `bandit` linter is enabled.
      > **Attention:** Notice that many linters can be `enabled`, but only one formatter can be the `provider`.
 7. Save the `settings.json` file. For now on, these settings are enabled. If you want to change any other settings, just edit this file.
 
@@ -261,7 +261,7 @@ A crucial part of virtually **all** programming projects is **version control**.
       origin  https://github.com/Microsoft/vscode-remote-try-python (fetch)
       origin  https://github.com/Microsoft/vscode-remote-try-python (push)
       ```
-   3. It is pointing to a Microsoft owned repo. To change it simply type `git remote set-url origin {your-url-here}`, where `{your-url-here}` should be exchanged with the link you had copied. After it, check the change with `git remote -v` again.
+   3. It is pointing to a Microsoft owned repo. To change it simply type <i>`git remote set-url origin {your-url-here}`</i>, where `{your-url-here}` should be exchanged with the link you had copied. After it, check the change with `git remote -v` again.
       ```bash
       vscode@978bae730087:/workspaces/vscode-remote-try-python$ git remote set-url origin https://github.com/phvv-me/vscode-python-debug.git
       vscode@978bae730087:/workspaces/vscode-remote-try-python$ git remote -v
@@ -463,8 +463,11 @@ vscode@978bae730087:/workspaces/vscode-remote-try-python$ python debugging101/br
 
 You should see something like the above in your console. Let's understand it:
 
-1. `> /workspaces/vscode-remote-try-python/debugging101/breakpoint.py(19)<module>()`
-   - the python module being executed: `/workspaces/vscode-remote-try-python/debugging101/breakpoint.py`
+1. debugger position
+   ```bash
+   > /workspaces/vscode-remote-try-python/debugging101/breakpoint.py(19)<module>()
+   ```
+   - the python module being executed: <i>`/workspaces/vscode-remote-try-python/debugging101/breakpoint.py`</i>
    - the line that the _debug console_ shows below: `(19)`
    - the location we are paused - currently at module level: `<module>()`
 2. `-> range2 = my_range(0, 10)`
@@ -533,11 +536,11 @@ You should see something like the above in your console. Let's understand it:
 
 1. `--Call--`
    - the execution stopped inside **another** function.
-2. `> /workspaces/vscode-remote-try-python/debugging101/breakpoint.py(2)my_range()`
-   - the python module being executed is still the same: `/workspaces/vscode-remote-try-python/debugging101/breakpoint.py` - if the function had been imported, it would be different.
+2. <i> `> /workspaces/vscode-remote-try-python/debugging101/breakpoint.py(2)my_range()` </i>
+   - the python module being executed is still the same: <i>`/workspaces/vscode-remote-try-python/debugging101/breakpoint.py`</i> - if the function had been imported, it would be different.
    - the line that the _debug console_ shows at `->` is number `(2)`
    - we are paused inside `my_range()` function
-3. `-> def my_range(start: int, end: int, step: float = 1):`
+3. <i>`-> def my_range(start: int, end: int, step: float = 1):`</i>
    - we see that the next line starts the function definition.
 4. `(Pdb)`
    - the _debug console_ input prompt waiting.
@@ -654,7 +657,7 @@ For this, we have the `b(reak)` command. This is a versatile operation, we will 
    (Pdb)
    ```
 
-   - `Breakpoint 1 at /workspaces/vscode-remote-try-python/debugging101/breakpoint.py:12` means we created the _breakpoint number 1_ located at line `12` of module `breakpoint`.
+   - <i>`Breakpoint 1 at /workspaces/vscode-remote-try-python/debugging101/breakpoint.py:12`</i> means we created the _breakpoint number 1_ located at line `12` of module `breakpoint`.
 
 3. We want this breakpoint to print `_range` when it is hit. Use `commands 1` to start the _breakpoint command console_ denoted by `(com)`. Inside of it, set `p _range` and close it with `end`.
 

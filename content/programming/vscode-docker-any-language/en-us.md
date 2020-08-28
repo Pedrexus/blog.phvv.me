@@ -108,7 +108,7 @@ So you want to try a new programming language and don't know how to start, what 
 
 1. download Visual Studio Code for Windows clicking [here][vscode windows installer].
 2. once it is downloaded, run the installer (click on the `.exe` file).
-3. vscode is by default installed at <i code>`C:\users\{username}\AppData\Local\Programs\Microsoft vscode`</i>
+3. vscode is by default installed at <i>`C:\users\{username}\AppData\Local\Programs\Microsoft vscode`</i>
 4. if you find any problems, look the [official Windows install guide][vscode windows install guide].
 
 [vscode windows installer]: https://code.visualstudio.com/docs?dv=win
