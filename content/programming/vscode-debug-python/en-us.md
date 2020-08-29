@@ -96,7 +96,7 @@ I will show two ways of configuring VS Code: the first one is simple and automat
 
 **13 - 27 minutes**
 
-This a very useful VS Code extension created by Microsoft that let us develop inside docker containers. With this extension, we are able to download a pre-configured python project (even if we don't have Python installed in the computer). The only requirements are VS Code and Docker, but if you don't know anything about Docker, don't worry, for I will thoroughly instruct the Docker related steps. Besides, if you have a hard time with this step or want to know more about it, I do have a specific <Link to="/link/to/it/">Remote Development extension pack tutorial</Link> you can look.
+This a very useful VS Code extension created by Microsoft that let us develop inside docker containers. With this extension, we are able to download a pre-configured python project (even if we don't have Python installed in the computer). The only requirements are VS Code and Docker, but if you don't know anything about Docker, don't worry, for I will thoroughly instruct the Docker related steps. Besides, if you have a hard time with this step or want to know more about it, I do have a specific <Link to="/programming/vscode-docker-any-language/en-us/">Remote Development extension pack tutorial</Link> you can look.
 
 #### 1. Install Docker on your computer
 
