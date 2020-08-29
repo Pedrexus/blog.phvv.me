@@ -1,6 +1,6 @@
 ---
-title: Understanding python list comprehensions with map, filter and reduce
-headline: Understanding python list comprehensions with map, filter and reduce
+title: Python list comprehensions and map, filter and reduce
+headline: Learning python list comprehensions with map, filter and reduce
 date: '2020-08-29'
 description: filter, map and reduce are common functional programming patterns that are available in python as builtin functions. However, list comprehensions get us the same results with less lines of code and enhanced readability, making it a necessary pythonic skill.
 language: english
