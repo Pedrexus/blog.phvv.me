@@ -61,8 +61,7 @@ As stated, debugging gives you a new power as a developer: the ability to invest
 4. Learning
    - If you're new to some tool, language, protocol, process, codebase or wants to find out what is going on inside something, debugging will make you learn and understand it easier and faster than just reading it. Besides, it's more enjoyable.
 5. Reverse Engineering
-
-- This post is not about this in particular, but debugging and reverse engineer have a lot in common. Then, if you want to learn about it, here could be a starting point!
+   - Debugging and reverse engineering have a lot in common. If you are interested in it, this could be a starting point!
 
 ### How Debugging will make you develop better?
 
