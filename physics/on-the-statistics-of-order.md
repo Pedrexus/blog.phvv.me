@@ -1,18 +1,19 @@
 ---
-title: On the Statistics of Order
 date: "2020-05-12"
 description: a short discussion about how scarce order and meaning are in our universe with a simple poker example
 language: english
-category: post
-outdated: false
+layout: post
+tags:
+  - thermodynamics
+  - entropy
+  - statistics
+title: On the Statistics of Order
 thumbnail: 
-   url: ../../../images/dark-blue-concrete-steps.jpg
+   url: ../images/dark-blue-concrete-steps.jpg
    description: In the stairwell of my library, the afternoon light fell through the metal railing thereby casting a unique shimmering light on the concrete steps.
    author: Martin Adams
    source: Unsplash
-keywords:
-  - entropy
-  - statistics
+published: false
 ---
 
 <!-- use poker as an example - use poker images -->

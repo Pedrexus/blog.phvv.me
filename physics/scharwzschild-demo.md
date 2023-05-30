@@ -1,9 +1,11 @@
 ---
-title: Demonstração da Métrica de Schwarzschild
 date: '2020-05-25'
 description: Demonstração da Métrica de Schwarzschild da Relatividade Geral a partir das equações de campo de Einstein com as coordenadas de Schwarzshild
 language: português
-category: post
+layout: post
+tags: 
+    - relativity
+title: Demonstração da Métrica de Schwarzschild
 ---
 <!-- 
 ---
